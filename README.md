@@ -1,16 +1,8 @@
-# menomoodhack
+# Meno Mood Hack App
 
-Control menopause mood swings. Based on meditation and music techniques.
+Control **Menopause mood swings**. Based on meditation and music techniques.
+This app and repo was created for the [Hacking Menopause by Hackster.io](https://www.hackster.io/contests/aarpmenopause) competition.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Build and install
+(Hope you have already setup flutter sdk on whatever editor you are using [VS-Code](https://flutter.dev/docs/get-started/editor?tab=vscode), [Android Studio](https://flutter.dev/docs/get-started/editor?tab=androidstudio) or [Emacs](https://flutter.dev/docs/get-started/editor?tab=emacs))
+This is a Flutter based app so simply just clone the project and build it. 
