@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+Difficulties Concentrating
+- Brain.fm (Music) https://www.youtube.com/channel/UC45Wdr3wPy1qR2WLUCTsFKg/videos
+Hydration reminder with internal tally
+- men(3.7) women(2.7)
+Record Activities
+- Record HotFlashes, Meal intake, sleep, exercise, moods, symtoms, periods, deziness
+- HotFlash probablitiy using past information (linear regression)
+- Other predictions (time) using RandomForest or anyother models (Dart - https://github.com/axegon/SkLite-dart)
+- prediction feedback for improvements
+Create reports based on data collected. (Check if periods have pattern if NO then mark as irregular)
+Headspace (clone )
+Random Articles fetched from https://myluna.care/insights
+app wide Voice assitant for menopause tracking and other features connected
+-----------------------------------------------------------------------------------------------------------------------------
+---------------------------------------- NAVIBAR (Bottom)
+Voice Assistant
+Music Player
+---------------------------------------- NAVIBAR (Top)
+Home
+- Alerts
+- Blogs
+- Quick Logger for Hot Flashes, water intake, sleep
+Blogs
+- Menopause related
+- Meditation
+Insights
+- Based on previously collected data
+Activity
+----------------------------------------
