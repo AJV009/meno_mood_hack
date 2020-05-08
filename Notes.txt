@@ -29,3 +29,5 @@ Insights
 Activity
 About
 ----------------------------------------
+https://github.com/londonappbrewery/Flutter-Course-Resources
+https://pub.dev/packages/flutter_native_splash
