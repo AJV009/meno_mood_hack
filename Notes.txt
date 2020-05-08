@@ -18,8 +18,8 @@ Voice Assistant
 Music Player
 ---------------------------------------- NAVIBAR (Top)
 Home
-- Alerts
-- Blogs
+- Alerts (https://pub.dev/packages/rflutter_alert, )
+- Blogs (https://www.healthline.com/health/menopause/best-blogs-of-the-year, widget, https://pub.dev/packages/flutter_web_browser)
 - Quick Logger for Hot Flashes, water intake, sleep
 Blogs
 - Menopause related
@@ -27,4 +27,5 @@ Blogs
 Insights
 - Based on previously collected data
 Activity
+About
 ----------------------------------------
