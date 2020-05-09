@@ -15,7 +15,7 @@ app wide Voice assitant for menopause tracking and other features connected
 -----------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------- NAVIBAR (Bottom)
 Voice Assistant (https://pub.dev/packages/flutter_speech)
-Music Player (https://pub.dev/packages/youtube_player_flutter)
+Music Player (https://pub.dev/packages/youtube_player_flutter) (the mozart effect music)
 ---------------------------------------- NAVIBAR (Top)
 Home (https://pub.dev/packages/ota_update)
 - Alerts (https://pub.dev/packages/rflutter_alert, )

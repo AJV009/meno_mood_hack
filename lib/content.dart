@@ -8,35 +8,33 @@ import 'package:path_provider/path_provider.dart';
 
 class Content {
   static double _widSize = 25;
-
+// bottom bar icons
   List<Widget> menuIcons = [
-    Icon(Icons.home, size: _widSize),
-    Icon(Icons.art_track, size: _widSize),
     Icon(Icons.assessment, size: _widSize),
+    Icon(Icons.art_track, size: _widSize),
     Icon(Icons.assignment_turned_in, size: _widSize),
     Icon(Icons.library_music, size: _widSize),
     Icon(Icons.record_voice_over, size: _widSize),
     Icon(Icons.help_outline, size: _widSize), ];
 
-  List<Widget> homeWid = [head("Home")];
-  List<Widget> blogWid = [head("Blogs"),];
+// widget lists
   List<Widget> insightsWid = [head("Insights"),];
+  List<Widget> blogWid = [head("Blogs"),];
   List<Widget> activityWid = [head("Activity"),];
   List<Widget> aboutWid = [head("About"),];
   List<Widget> audWid = [head("Listen"),];
   List<Widget> voiceWid = [head("Speakup"),];
 
+// change page code
   changePage(int index){
-//    Content cont = new Content();
-    if (index == 0) return homeWid;
+    if (index == 0) return insightsWid;
     else if (index == 1) return blogWid;
-    else if (index == 2) return insightsWid;
-    else if (index == 3) return activityWid;
-    else if (index == 4) return audWid;
-    else if (index == 5) return voiceWid;
-    else if (index == 6) return aboutWid;
+    else if (index == 2) return activityWid;
+    else if (index == 3) return audWid;
+    else if (index == 4) return voiceWid;
+    else if (index == 5) return aboutWid;
   }
-
+// head of every page
   static Widget head(String txt){
     return Padding(
       padding: const EdgeInsets.all(3.0),
@@ -49,9 +47,10 @@ class Content {
       ),
     );
   }
-
-  static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
-
+  // ----------------------------
+  // TODO: Insights (local linear regression, reports)
+  // ----------------------------
+// function to fetch and insert data to BLOG widgets
   jsonify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/blog.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
@@ -63,9 +62,10 @@ class Content {
     });
   }
 
-//  void snipmaker(){
-//  }
+  // open browser code
+  static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
 
+// create blogsniip widgets
   static Widget blogsnip(String desc, String url) {
     return Padding(
       padding: const EdgeInsets.all(3.0),
@@ -80,5 +80,13 @@ class Content {
       ),
     );
   }
-
+// ----------------------------
+// TODO: Activity (record - periods, sleep, water intake)
+// ----------------------------
+// TODO: Listen (music)
+// ----------------------------
+// TODO: Speakup (speakup to doctors)
+// ----------------------------
+// TODO: About
+// ----------------------------
 }
