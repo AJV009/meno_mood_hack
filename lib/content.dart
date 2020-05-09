@@ -59,9 +59,9 @@ class Content {
   }
 
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
-
   static jsonify() {
-    a
+    String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/blog.json";
+    
   }
 
 }
