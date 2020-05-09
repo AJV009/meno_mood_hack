@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:json_serializable/json_serializable.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
 
 class Content {
@@ -58,5 +59,9 @@ class Content {
   }
 
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
+
+  static jsonify() {
+    a
+  }
 
 }

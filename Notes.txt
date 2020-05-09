@@ -14,20 +14,22 @@ Random Articles fetched from https://myluna.care/insights
 app wide Voice assitant for menopause tracking and other features connected
 -----------------------------------------------------------------------------------------------------------------------------
 ---------------------------------------- NAVIBAR (Bottom)
-Voice Assistant
-Music Player
+Voice Assistant (https://pub.dev/packages/flutter_speech)
+Music Player (https://pub.dev/packages/youtube_player_flutter)
 ---------------------------------------- NAVIBAR (Top)
-Home
+Home (https://pub.dev/packages/ota_update)
 - Alerts (https://pub.dev/packages/rflutter_alert, )
 - Blogs (https://www.healthline.com/health/menopause/best-blogs-of-the-year, widget, https://pub.dev/packages/flutter_web_browser)
-- Quick Logger for Hot Flashes, water intake, sleep
-Blogs
+- Quick Logger for Hot Flashes, water intake, sleep (https://pub.dev/packages/stop_watch_timer)
+Blogs (https://pub.dev/packages/json_serializable)
 - Menopause related
 - Meditation
 Insights
-- Based on previously collected data
-Activity
+- Based on previously collected data (https://pub.dev/packages/ml_algo)
+Activity (https://pub.dev/packages/stop_watch_timer)
 About
 ----------------------------------------
-https://github.com/londonappbrewery/Flutter-Course-Resources
+https://pub.dev/packages/ota_update
 https://pub.dev/packages/flutter_native_splash
+----------------------------------------
+https://github.com/londonappbrewery/Flutter-Course-Resources
