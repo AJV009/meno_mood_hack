@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'content.dart';
-
+Content cont = new Content();
 void main() => runApp(MaterialApp( home: MenoMood(),  title: 'MenoHack', ), );
-class MenoMood extends StatefulWidget { @override _MenoMoodState createState() => _MenoMoodState(); }
-
+class MenoMood extends StatefulWidget { @override _MenoMoodState createState() { cont.jsonify(); return _MenoMoodState(); } }
 class _MenoMoodState extends State<MenoMood> {
-  Content cont = new Content(); int _page = 0;
+  int _page = 0; 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +19,7 @@ class _MenoMoodState extends State<MenoMood> {
         ),
         body: Container(
           decoration: BoxDecoration(image: DecorationImage(image: AssetImage('asset/images/h1.jpg'), fit: BoxFit.cover)),
-          child: Center( child: Column(mainAxisSize: MainAxisSize.max, children: cont.changePage(_page) ), ),
+          child: Center( child: ListView(children: cont.changePage(_page) ), ),
         ),
     );
   }

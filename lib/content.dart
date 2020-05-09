@@ -18,7 +18,7 @@ class Content {
     Icon(Icons.record_voice_over, size: _widSize),
     Icon(Icons.help_outline, size: _widSize), ];
 
-  List<Widget> homeWid = [head("Home"), blogsnip('url', 'desc')];
+  List<Widget> homeWid = [head("Home")];
   List<Widget> blogWid = [head("Blogs"),];
   List<Widget> insightsWid = [head("Insights"),];
   List<Widget> activityWid = [head("Activity"),];
@@ -37,19 +37,6 @@ class Content {
     else if (index == 6) return aboutWid;
   }
 
-  static Widget blogsnip(String url,String desc) {
-    return Padding(
-      padding: const EdgeInsets.all(3.0),
-      child: SizedBox(
-        width: double.infinity,
-        child: FlatButton(
-          color: Colors.pink.shade50,
-//            onPressed: () => openBrowserTab("something"),
-            onPressed: () => jsonify(),
-            child: Text('FLutter')),
-      ),
-      );
-  }
   static Widget head(String txt){
     return Padding(
       padding: const EdgeInsets.all(3.0),
@@ -65,22 +52,33 @@ class Content {
 
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
 
-  static Map jsondata = new Map();
-
-  static jsonify() async {
+  jsonify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/blog.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
     String savePath = appDirectory.path+"/blog.json";
     await Dio().download(jsonfile,savePath);
-    jsondata = json.decode(await new File(savePath).readAsString());
+    Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
-      print(key);
-      print(value);
+      blogWid.add(blogsnip(key, value));
     });
   }
 
-  static Widget blogMaker(){
-    
+//  void snipmaker(){
+//  }
+
+  static Widget blogsnip(String desc, String url) {
+    return Padding(
+      padding: const EdgeInsets.all(3.0),
+      child: SizedBox(
+        width: double.infinity,
+        child: FlatButton(
+            color: Colors.pink.shade50,
+            onPressed: () => openBrowserTab(url),
+            child: Text(desc, style: TextStyle(fontSize: 20.0,),),
+            shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        ),
+      ),
+    );
   }
 
 }
