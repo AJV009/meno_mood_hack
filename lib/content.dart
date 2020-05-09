@@ -1,6 +1,10 @@
+import 'dart:io';
+import 'dart:io' show File;
+import 'dart:convert' show json;
 import 'package:flutter/material.dart';
-import 'package:json_serializable/json_serializable.dart';
+import 'package:dio/dio.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
+import 'package:path_provider/path_provider.dart';
 
 class Content {
   static double _widSize = 25;
@@ -12,7 +16,7 @@ class Content {
     Icon(Icons.assignment_turned_in, size: _widSize),
     Icon(Icons.library_music, size: _widSize),
     Icon(Icons.record_voice_over, size: _widSize),
-    Icon(Icons.help_outline, size: _widSize),];
+    Icon(Icons.help_outline, size: _widSize), ];
 
   List<Widget> homeWid = [head("Home"), blogsnip('url', 'desc')];
   List<Widget> blogWid = [head("Blogs"),];
@@ -40,7 +44,8 @@ class Content {
         width: double.infinity,
         child: FlatButton(
           color: Colors.pink.shade50,
-            onPressed: () => openBrowserTab("something"),
+//            onPressed: () => openBrowserTab("something"),
+            onPressed: () => jsonify(),
             child: Text('FLutter')),
       ),
       );
@@ -59,8 +64,22 @@ class Content {
   }
 
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
-  static jsonify() {
+
+  static Map jsondata = new Map();
+
+  static jsonify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/blog.json";
+    Directory appDirectory = await getApplicationDocumentsDirectory();
+    String savePath = appDirectory.path+"/blog.json";
+    await Dio().download(jsonfile,savePath);
+    jsondata = json.decode(await new File(savePath).readAsString());
+    jsondata.forEach((key, value) {
+      print(key);
+      print(value);
+    });
+  }
+
+  static Widget blogMaker(){
     
   }
 
