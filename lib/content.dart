@@ -7,6 +7,9 @@ import 'package:flutter_web_browser/flutter_web_browser.dart';
 import 'package:path_provider/path_provider.dart';
 
 class Content {
+  // ----------------------------
+  // TODO: Splash Screen
+  // ----------------------------
   static double _widSize = 25;
 // bottom bar icons
   List<Widget> menuIcons = [
@@ -16,7 +19,6 @@ class Content {
     Icon(Icons.library_music, size: _widSize),
     Icon(Icons.record_voice_over, size: _widSize),
     Icon(Icons.help_outline, size: _widSize), ];
-
 // widget lists
   List<Widget> insightsWid = [head("Insights"),];
   List<Widget> blogWid = [head("Blogs"),];
@@ -24,7 +26,6 @@ class Content {
   List<Widget> aboutWid = [head("About"),];
   List<Widget> audWid = [head("Listen"),];
   List<Widget> voiceWid = [head("Speakup"),];
-
 // change page code
   changePage(int index){
     if (index == 0) return insightsWid;
@@ -34,14 +35,13 @@ class Content {
     else if (index == 4) return voiceWid;
     else if (index == 5) return aboutWid;
   }
+  // ----------------------------
 // head of every page
   static Widget head(String txt){
     return Padding(
       padding: const EdgeInsets.all(3.0),
-      child: SizedBox(
-        width: double.infinity,
-        child: MaterialButton(
-          disabledColor: Colors.yellow.shade300,
+      child: SizedBox( width: double.infinity,
+        child: MaterialButton( disabledColor: Colors.yellow.shade300,
           child: Text(txt, style: TextStyle(fontSize: 40.0, fontFamily: 'Righteous', color: Colors.blue.shade400,), ),
         ),
       ),
