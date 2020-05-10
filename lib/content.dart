@@ -49,13 +49,14 @@ class Content {
     );
   }
   makeList(){
-    ConnectivityResult connectivity;
-    print(connectivity);
     insights();
     blogify();
+    activify();
     musicify();
+    speakfy();
+    theAbout();
   }
-  // ----------------------------
+  // ------------------------ TODO: Insights
   insights() {
     insightsWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
   }
@@ -86,7 +87,7 @@ class Content {
       ),
     );
   }
-  // ----------------------------
+  // --------------------- TODO: Activity
   activify(){
     activityWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
   }
@@ -104,11 +105,11 @@ class Content {
       audWid.add(YoutubePlayer( controller: controller, showVideoProgressIndicator: false, ));
     });
   }
-  // ----------------------------
+  // ----------------- TODO: voice assistant
   speakfy(){
     voiceWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
   }
-  // ----------------------------
+  // ---------------- TODO: About
   theAbout(){
     aboutWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
   }

@@ -49,16 +49,14 @@ Some points to note for a person not in good health - Music, Meditation, control
 ## Challenges Faced
 
 ## TODO
-- iOS binaries
+- iOS binaries (need a MacBook for iOS Development)
 - Publish to Play Store and App Store
 - Voice Assitant in App for touchless interface
-- Smoother UI
-- Automatic blog update
+- Smoother UI, Auto blog update
 - OTA update
-- Replace video player with Music player which plays from YouTube
-- More Mozart Effect Music
+- Replace video player with Music player which plays from YouTube and More Mozart Effect Music
 - Decrease Splash Screen delays
-- Fetch blog JSON file from firebase (as of now its fetches from this repo!)
+- Replace JSON with Firebase
 
 ## Build and Install
 
