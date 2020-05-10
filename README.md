@@ -57,6 +57,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Replace video player with Music player which plays from YouTube and More Mozart Effect Music
 - Decrease Splash Screen delays
 - Replace JSON with Firebase
+- Use simple on-device SVM for prediction of other symtoms and complexities. (ML)
 
 ## Build and Install
 
@@ -90,3 +91,4 @@ All the latest updated binaries are stored in [binaries](/binaries) folder with 
 - I learned Flutter from [Introduction to Flutter Development Using Dart course by The App Brewery created in collaboration with the Google Flutter team](https://www.appbrewery.co/p/intro-to-flutter)
 - Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building you can try them out.
 - Flowcharts were made using [Darw.io](https://www.draw.io/), a desktop version is available too.
+- **I will work on TODO if I receive some public interest or support. (Cause the list is actually easy except the time needed)**

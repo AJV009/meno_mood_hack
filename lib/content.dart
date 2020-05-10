@@ -3,10 +3,10 @@ import 'dart:io' show File;
 import 'dart:convert' show json;
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
-import 'package:flutter_offline/flutter_offline.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:barbarian/barbarian.dart';
 
 class Content {
   // ----------------------------
@@ -48,6 +48,11 @@ class Content {
       ),
     );
   }
+  // health data
+  List water = [];
+  List period = [];
+  List sleep = [];
+  // damn call everything I know of!
   makeList(){
     insights();
     blogify();
@@ -57,7 +62,7 @@ class Content {
     theAbout();
   }
   // ------------------------ TODO: Insights
-  insights() {
+  insights() async {
     insightsWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
   }
   // ----------------------------
@@ -66,7 +71,8 @@ class Content {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/blog.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
     String savePath = appDirectory.path+"/blog.json";
-    await Dio().download(jsonfile,savePath);
+    try {await Dio().download(jsonfile,savePath);}
+    catch(e){}
     Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
       blogWid.add(blogsnip(key, value));
@@ -88,15 +94,31 @@ class Content {
     );
   }
   // --------------------- TODO: Activity
-  activify(){
-    activityWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+  activify() async {
+    barbaDataCheck();
+//    activityWid.add(
+//
+//    );
+  }
+  barbaDataCheck() async {
+    await Barbarian.init();
+    try {
+      water = Barbarian.read('water');
+      period = Barbarian.read('period');
+      sleep = Barbarian.read('sleep');
+    }
+    catch(e){}
+    Barbarian.write('water', water);
+    Barbarian.write('period', period);
+    Barbarian.write('sleep', sleep);
   }
   // ----------------------------
   musicify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/music.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
     String savePath = appDirectory.path+"/music.json";
-    await Dio().download(jsonfile,savePath);
+    try {await Dio().download(jsonfile,savePath);}
+    catch(e){}
     Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
       YoutubePlayerController controller = YoutubePlayerController(

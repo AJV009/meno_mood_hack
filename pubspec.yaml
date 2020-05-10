@@ -13,8 +13,8 @@ dependencies:
   flutter_web_browser: ^0.11.0
   path_provider: ^1.6.7
   youtube_player_flutter: ^6.1.1
-  flutter_offline: ^0.3.0
-
+  rflutter_alert: ^1.0.3
+  barbarian: ^0.2.26+6
 dev_dependencies:
   flutter_test:
     sdk: flutter
