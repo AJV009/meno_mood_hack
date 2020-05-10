@@ -31,7 +31,10 @@ Some points to note for a person not in good health - Music, Meditation, control
 ## App structure
 ## Features
 ## Code explanation
-- **Packages used** (https://pub.dev/)
+**Packages used** (https://pub.dev/)
+## What I learned
+## Challenges Faced
+## TODO
 
 ## Build and install
 
