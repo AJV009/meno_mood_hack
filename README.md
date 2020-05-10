@@ -23,6 +23,10 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Meditation can come really handy to control constant mood swings. The most simple breath in breath out meditation is a very effective method for stressed out people while it does take some time to get used to even such simple meditation techniques.
 - Voice assistant can help you get your work done without touching your phone. Using STT (speech to text) and TTS(text to speech) modules for reminding you of task, reading you out good blogs on menopause to make you feel good. As of now google keyboards comes with voice features so you fill any input text area with your voice.
 
+## What my App does?
+## App structure
+## 
+
 ## Build and install
 
 ### My build Setup
@@ -36,7 +40,9 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Android Studio (version 3.6), Flutter plugin version 45.1.1, Dart plugin version 192.7761
 - VS Code, 64-bit edition (version 1.44.2)
 
-### Build Project (Clone this project nad build using flutter)
+### Build Project
+Hope you have already setup flutter sdk on whatever editor you are using [VS-Code](https://flutter.dev/docs/get-started/editor?tab=vscode), [Android Studio](https://flutter.dev/docs/get-started/editor?tab=androidstudio) or [Emacs](https://flutter.dev/docs/get-started/editor?tab=emacs)
+Clone this project nad build using flutter!
 ```shell
 $ git clone https://github.com/AJV009/meno_mood_hack
 $ cd /meno_mood_hack
@@ -48,5 +54,4 @@ $ flutter run
 All the last updated binaries are stored in [binaries](/binaries) folder
 
 <!-- ## Build and install
-(Hope you have already setup flutter sdk on whatever editor you are using [VS-Code](https://flutter.dev/docs/get-started/editor?tab=vscode), [Android Studio](https://flutter.dev/docs/get-started/editor?tab=androidstudio) or [Emacs](https://flutter.dev/docs/get-started/editor?tab=emacs))
-This is a Flutter based app so simply just clone the project and build it.  -->
+()
