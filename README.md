@@ -13,6 +13,16 @@ This app and repo was created for the [Hacking Menopause by Hackster.io](https:/
 - Hot flashes are the most known symptom of menopause. Did you know there are over 35 other symptoms that women might experience during the three phases of menopause.
 **Hot Flashes** - A sudden wave of mild or intense body heat caused by rushes of hormonal changes resulting from decreased levels of estrogen. Hot flashes can occur at any time and may last from a few seconds to a half-hour. They are due to blood vessel opening and constricting and a symptom of menopause.
 
+## How can apps help
+Some points to note for a person not in good health - Music, Meditation, control over sleep and fluid intake.
+- Music can help a lot in concentration and help in distracting you from thinking more and more about your menopause issues. So during the project we will be including a YouTube plugin to randomly play some concentration music by Brain.fm.
+**NOTE:** Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building.
+- Reminders can help in reminding of fluid intake which is one of keeping menopause in control. Lack of body fluids can cause dizziness which could case harm to your productivity or work assigned.
+- Activity recorder can record activities such as Hot flashes, Meal intake, sleep, exercise, moods, symptoms, periods, dizziness. These data collected can be submitted to a doctor for further diagnoses.
+- Machine Learning can help in predicting hot flash and periods* based on the data collected everyday. We can run basic ML algorithms such as RandomForest and LinearRegression to get good results. We don't need any complex custom algorithms as far as the data is concerned. (Data on menopause which we collect during app usage seems to be relatable in some way or the other)
+- Meditation can come really handy to control constant mood swings. The most simple breath in breath out meditation is a very effective method for stressed out people while it does take some time to get used to even such simple meditation techniques.
+- Voice assistant can help you get your work done without touching your phone. Using STT (speech to text) and TTS(text to speech) modules for reminding you of task, reading you out good blogs on menopause to make you feel good. As of now google keyboards comes with voice features so you fill any input text area with your voice.
+
 ## Build and install
 
 ### My build Setup
