@@ -56,7 +56,7 @@ $ flutter clean
 $ flutter run
 ```
 
-### Binaries (Build using flutter build apk --split-per-abi)
+### Binaries (Build using 'flutter build apk --split-per-abi')
 All the last updated binaries are stored in [binaries](/binaries) folder
 
 ## Notes
