@@ -25,7 +25,8 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 ## What my App does?
 ## App structure
-## 
+## Features
+## Code explanation
 
 ## Build and install
 
@@ -42,7 +43,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 ### Build Project
 Hope you have already setup flutter sdk on whatever editor you are using [VS-Code](https://flutter.dev/docs/get-started/editor?tab=vscode), [Android Studio](https://flutter.dev/docs/get-started/editor?tab=androidstudio) or [Emacs](https://flutter.dev/docs/get-started/editor?tab=emacs)
-Clone this project nad build using flutter!
+Clone this project and build using flutter!
 ```shell
 $ git clone https://github.com/AJV009/meno_mood_hack
 $ cd /meno_mood_hack
