@@ -85,7 +85,7 @@ $ flutter run
 
 ### Binaries (Build using 'flutter build apk --split-per-abi')
 As of now, I couldnt afford to publish in a App Store, but the binaries are available for you to download and install.
-All the last updated binaries are stored in [binaries](/binaries) folder
+All the latest updated binaries are stored in [binaries](/binaries) folder with the architecture name as tail of the filename.
 
 ## Notes
 - I learned Flutter from [Introduction to Flutter Development Using Dart course by The App Brewery created in collaboration with the Google Flutter team](https://www.appbrewery.co/p/intro-to-flutter)
