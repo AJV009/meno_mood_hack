@@ -35,6 +35,14 @@ Some points to note for a person not in good health - Music, Meditation, control
 ## What I learned
 ## Challenges Faced
 ## TODO
+- iOS binaries
+- Publish to Play Store and App Store
+- Voice Assitant throught the App for touchless interface
+- Smoother UI
+- Automatic blog update
+- OTA update
+- Replace video player with Music player which plays from YouTube
+- More Mozart Effect Music
 
 ## Build and install
 
@@ -50,7 +58,9 @@ Some points to note for a person not in good health - Music, Meditation, control
 - VS Code, 64-bit edition (version 1.44.2)
 
 ### Build Project from source code
+Being a Flutter code it can be compiled for both Android and iOS. (For iOS some changes have to be made in different files)
 Hope you have already setup flutter sdk on whatever editor you are using [VS-Code](https://flutter.dev/docs/get-started/editor?tab=vscode), [Android Studio](https://flutter.dev/docs/get-started/editor?tab=androidstudio) or [Emacs](https://flutter.dev/docs/get-started/editor?tab=emacs)
+
 Clone this project and build using flutter!
 ```shell
 $ git clone https://github.com/AJV009/meno_mood_hack
@@ -60,6 +70,7 @@ $ flutter run
 ```
 
 ### Binaries (Build using 'flutter build apk --split-per-abi')
+As of now, I couldnt afford to publish in a App Store, but the binaries are available for you to download and install.
 All the last updated binaries are stored in [binaries](/binaries) folder
 
 ## Notes
