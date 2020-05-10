@@ -61,5 +61,5 @@ All the last updated binaries are stored in [binaries](/binaries) folder
 
 ## Notes
 - I learned Flutter from [Introduction to Flutter Development Using Dart course by The App Brewery created in collaboration with the Google Flutter team](https://www.appbrewery.co/p/intro-to-flutter)
-- Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building.
-- Flowcharts were made using [Darw.io](https://www.draw.io/)
+- Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building you can try them out.
+- Flowcharts were made using [Darw.io](https://www.draw.io/), a desktop version is available too.
