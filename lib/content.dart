@@ -33,6 +33,21 @@ class Content {
     else if (index == 4) return voiceWid;
     else if (index == 5) return aboutWid;
   }
+  String blogFilePath = "/blog.json";
+  String blogNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/AppNetData/blog.json";
+  String musicFilePath = "/music.json";
+  String musicNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/AppNetData/music.json";
+  // json file downloader
+  jsonify(String jsonNetPath, String fileName) async {
+    String jsonfile = jsonNetPath;
+    Directory appDirectory = await getApplicationDocumentsDirectory();
+    String savePath = appDirectory.path+fileName;
+    await Dio().download(jsonfile,savePath);
+    Map jsondata = json.decode(await new File(savePath).readAsString());
+    jsondata.forEach((key, value) {
+      blogWid.add(blogsnip(key, value));
+    });
+  }
   // ----------------------------
 // head of every page
   static Widget head(String txt){
@@ -49,16 +64,6 @@ class Content {
   // TODO: Insights (local linear regression, reports)
   // ----------------------------
 // function to fetch and insert data to BLOG widgets
-  jsonify() async {
-    String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/blog.json";
-    Directory appDirectory = await getApplicationDocumentsDirectory();
-    String savePath = appDirectory.path+"/blog.json";
-    await Dio().download(jsonfile,savePath);
-    Map jsondata = json.decode(await new File(savePath).readAsString());
-    jsondata.forEach((key, value) {
-      blogWid.add(blogsnip(key, value));
-    });
-  }
 
   // open browser code
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
@@ -80,8 +85,10 @@ class Content {
   }
 // ----------------------------
 // TODO: Activity (record - periods, sleep, water intake)
+//Map periodTable =
 // ----------------------------
 // TODO: Listen (music)
+
 // ----------------------------
 // TODO: Speakup (speakup to doctors)
 // ----------------------------
