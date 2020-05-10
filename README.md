@@ -28,36 +28,44 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Quickly connect with nearby doctors in case of emergencies and any problems.
 
 ## Why Flutter over other Android Frameworks?
+- Same UI and business logic in all platforms. Single code base works for iOS, Android, Web and Desktop.
+- Hot Reload, Hot Restart saves a ton of time compared to other Android frameworks. Using this feature Flutter actually changes that specific line of code in the deployment instead of rebuilding the whole thing again.
+- Almost Native App performance because its build using Dart so nothing to do with JavaScript and much faster than React Native.
+- Custom, polished, flexible and smooth UI
+- As you can see I developed this app from scratch in just 4-5 days. This is perfect for MVP (Minimal Viable Product). Develop quickly and lauch quickly to both iOS and Android in the same time.
 
-## What my App does?
+## Features and what my App does?
 
 ## App structure
 
-## Features
-
 ## Code explanation
-**Packages used** (https://pub.dev/)
+**Packages used** (check out the [pubspec.yml](/pubspec.yaml) for dependencies used)
 - [curved_navigation_bar]()
 - [dio]()
 - [flutter_web_browser]()
 - [path_provider]()
 - [youtube_player_flutter]()
-- [flutter_native_splash]()
+- [rflutter_alert]()
+- [barbarian]()
 
 ## What I learned
+- How Menopause affected women. The challenges they faced while trying to live out. There sufferings because of years long Menopause.
+- Android Flutter Development
 
 ## Challenges Faced
+- Memory Leak during build because of wrong dependencies.
+- Being my first App I actually spend a lot of time trying to figure out various things in Flutter Development. (An experienced developer can recreate this App within 1 day.)
 
 ## TODO
 - iOS binaries (need a MacBook for iOS Development)
 - Publish to Play Store and App Store
 - Voice Assitant in App for touchless interface
-- Smoother UI, Auto blog update
-- OTA update
+- Smoother UI, Auto blog update, OTA update
 - Replace video player with Music player which plays from YouTube and More Mozart Effect Music
 - Decrease Splash Screen delays
 - Replace JSON with Firebase
 - Use simple on-device SVM for prediction of other symtoms and complexities. (ML)
+- Fourms support (discuss and share experencies)
 
 ## Build and Install
 
@@ -91,4 +99,5 @@ All the latest updated binaries are stored in [binaries](/binaries) folder with 
 - I learned Flutter from [Introduction to Flutter Development Using Dart course by The App Brewery created in collaboration with the Google Flutter team](https://www.appbrewery.co/p/intro-to-flutter)
 - Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building you can try them out.
 - Flowcharts were made using [Darw.io](https://www.draw.io/), a desktop version is available too.
-- **I will work on TODO if I receive some public interest or support. (Cause the list is actually easy except the time needed)**
+- **I will work on TODO list if I receive some public interest or support. (Cause the list is actually easy except the time needed)**
+- This project will remain Open Source forever!
