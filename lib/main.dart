@@ -6,7 +6,7 @@ Content cont = new Content();
 void main() => runApp(MaterialApp( home: MenoMood(),  title: 'MenoHack', ), );
 class MenoMood extends StatefulWidget { @override _MenoMoodState createState() {
   cont.blogify(cont.fileDownloader(cont.blogNetPath, cont.blogFilePath));
-
+  cont.musicify(cont.fileDownloader(cont.musicNetPath,cont.musicFilePath));
   return _MenoMoodState(); } }
 class _MenoMoodState extends State<MenoMood> {
   int _page = 0; 

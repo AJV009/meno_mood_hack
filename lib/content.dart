@@ -62,6 +62,9 @@ class Content {
   }
   // ----------------------------
   // TODO: Insights (local linear regression, reports)
+  insights() {
+    insightsWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+  }
   // ----------------------------
   // blogsnipmaker downloader
   blogify(savePath) async {
@@ -96,11 +99,11 @@ class Content {
       audWid.add(musicsnip(value));
     });
   }
-  musicsnip(VidID) async {
+  musicsnip(vidID) async {
     YoutubePlayerController controller = YoutubePlayerController(
-      initialVideoId: YoutubePlayer.convertUrlToId(VidID),
+      initialVideoId: YoutubePlayer.convertUrlToId(vidID),
         flags: YoutubePlayerFlags( autoPlay: false, loop: true) );
-    YoutubePlayer( controller: controller, showVideoProgressIndicator: false, );
+    return YoutubePlayer( controller: controller, showVideoProgressIndicator: false, );
   }
   // ----------------------------
   // TODO: Speakup (speakup to doctors)
