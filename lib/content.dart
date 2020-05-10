@@ -8,8 +8,6 @@ import 'package:path_provider/path_provider.dart';
 
 class Content {
   // ----------------------------
-  // TODO: Splash Screen
-  // ----------------------------
   static double _widSize = 25;
 // bottom bar icons
   List<Widget> menuIcons = [

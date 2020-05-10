@@ -19,7 +19,7 @@ class _MenoMoodState extends State<MenoMood> {
           onTap: (index) { setState(() { _page = index; }); },
         ),
         body: Container(
-          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('asset/images/h1.jpg'), fit: BoxFit.cover)),
+          decoration: BoxDecoration(image: DecorationImage(image: AssetImage('asset/images/splash.png'), fit: BoxFit.cover)),
           child: Center( child: ListView(children: cont.changePage(_page) ), ),
         ),
     );

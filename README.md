@@ -52,17 +52,19 @@ Some points to note for a person not in good health - Music, Meditation, control
 ## TODO
 - iOS binaries
 - Publish to Play Store and App Store
-- Voice Assitant throught the App for touchless interface
+- Voice Assitant in App for touchless interface
 - Smoother UI
 - Automatic blog update
 - OTA update
 - Replace video player with Music player which plays from YouTube
 - More Mozart Effect Music
+- Decrease Splash Screen delays
+- Fetch blog JSON file from firebase (as of now its fetches from this repo!)
 
 ## Build and Install
 
 ### My PC build Setup (HP EliteBook 8470p)
-- 8GB RAM, 500BG HDD
+- 8GB RAM, 500GB HDD
 - Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz, 2601 Mhz, 2 Core(s), 4 Logical Processor(s)
 
 ### Flutter version details (from 'flutter doctor')
