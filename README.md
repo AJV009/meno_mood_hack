@@ -2,10 +2,10 @@
 Control **Menopause mood swings**. Based on meditation and music techniques.
 This app and repo was created for the [Hacking Menopause by Hackster.io](https://www.hackster.io/contests/aarpmenopause) competition.
 
-Am a Indian kid just started to learn develop mobile applications. So am more like a software guy than hardware. Even though Menopause is a new thing to me and only for girls or women I have a little sister and mother to take care of! So It makes sense for me to contribute with the knowledge I have about App Development and little bit of Machine Learning (ML). Being a Software kid I couldnt think of any Hardware solutions and I guess there are many Hardware developers out there making some amazing solution for Menopause.
+Am a Indian kid just started to learn develop mobile applications. So am more like a software guy than hardware. Even though Menopause is a new thing to me and only for girls or women I have a little sister and mother to take care of! So it makes sense for me to contribute with the knowledge I have about App Development and little bit of Machine Learning (ML). Being a Software kid I couldnt think of any Hardware solutions and I guess there are many Hardware developers out there making some amazing solution for Menopause.
 
 After watching the "AARP Hacking Menopause Webinar" I felt that that I could solve some Menopause symptoms like anxiety and stress using mobile applications. This is my first ever mobile application so suggestions are welcomed.
-This project guide will take you through the whole app structure from scratch with understanding of a Flutter App development and Menopause. symptoms.
+This project guide will take you through the whole app structure and Menopause symptoms.
 
 ## Menopause
 - Menopause is the time that marks the end of your menstrual cycles. It's diagnosed after you've gone 12 months without a menstrual period.
