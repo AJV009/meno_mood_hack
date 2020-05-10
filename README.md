@@ -10,7 +10,8 @@ This app and repo was created for the [Hacking Menopause by Hackster.io](https:/
 - One in three American women are currently in a phase of menopause 20% of the American workforce is currently experiencing menopause.
 - Very few women use hormone replacement therapy (HRT).
 - Perimenopause is the 4-10 years leading up to that point can bring a variety of disruptive symptoms to a woman. In the postmenopausal period, some symptoms can diminish, while new ones appear.
-- Hot flashes are the most known symptom of menopause. Did you know there are over 35 other symptoms that women might experience during the three phases of menopause. 
+- Hot flashes are the most known symptom of menopause. Did you know there are over 35 other symptoms that women might experience during the three phases of menopause.
+**Hot Flashes** - A sudden wave of mild or intense body heat caused by rushes of hormonal changes resulting from decreased levels of estrogen. Hot flashes can occur at any time and may last from a few seconds to a half-hour. They are due to blood vessel opening and constricting and a symptom of menopause.
 
 ## Build and install
 
