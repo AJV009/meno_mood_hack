@@ -26,6 +26,9 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Machine Learning can help in predicting hot flash and periods* based on the data collected everyday. We can run basic ML algorithms such as RandomForest and LinearRegression to get good results. We don't need any complex custom algorithms as far as the data is concerned. (Data on menopause which we collect during app usage seems to be relatable in some way or the other)
 - Meditation can come really handy to control constant mood swings. The most simple breath in breath out meditation is a very effective method for stressed out people while it does take some time to get used to even such simple meditation techniques.
 - Voice assistant can help you get your work done without touching your phone. Using STT (speech to text) and TTS(text to speech) modules for reminding you of task, reading you out good blogs on menopause to make you feel good. As of now google keyboards comes with voice features so you fill any input text area with your voice.
+- Quickly connect with nearby doctors in case of emergencies and any problems.
+
+## Why Flutter over other Android Frameworks?
 
 ## What my App does?
 
@@ -40,6 +43,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - [flutter_web_browser]()
 - [path_provider]()
 - [youtube_player_flutter]()
+- [flutter_native_splash]()
 
 ## What I learned
 
