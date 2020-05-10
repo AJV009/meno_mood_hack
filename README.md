@@ -21,7 +21,6 @@ This project guide will take you through the whole app structure from scratch wi
 ## How can apps help
 Some points to note for a person not in good health - Music, Meditation, control over sleep and fluid intake.
 - Music can help a lot in concentration and help in distracting you from thinking more and more about your menopause issues. So during the project we will be including a YouTube plugin to randomly play some concentration music by Brain.fm.
-**NOTE:** Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building.
 - Reminders can help in reminding of fluid intake which is one of keeping menopause in control. Lack of body fluids can cause dizziness which could case harm to your productivity or work assigned.
 - Activity recorder can record activities such as Hot flashes, Meal intake, sleep, exercise, moods, symptoms, periods, dizziness. These data collected can be submitted to a doctor for further diagnoses.
 - Machine Learning can help in predicting hot flash and periods* based on the data collected everyday. We can run basic ML algorithms such as RandomForest and LinearRegression to get good results. We don't need any complex custom algorithms as far as the data is concerned. (Data on menopause which we collect during app usage seems to be relatable in some way or the other)
@@ -32,6 +31,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 ## App structure
 ## Features
 ## Code explanation
+- **Packages used** (https://pub.dev/)
 
 ## Build and install
 
@@ -46,7 +46,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Android Studio (version 3.6), Flutter plugin version 45.1.1, Dart plugin version 192.7761
 - VS Code, 64-bit edition (version 1.44.2)
 
-### Build Project
+### Build Project from source code
 Hope you have already setup flutter sdk on whatever editor you are using [VS-Code](https://flutter.dev/docs/get-started/editor?tab=vscode), [Android Studio](https://flutter.dev/docs/get-started/editor?tab=androidstudio) or [Emacs](https://flutter.dev/docs/get-started/editor?tab=emacs)
 Clone this project and build using flutter!
 ```shell
@@ -59,5 +59,7 @@ $ flutter run
 ### Binaries (Build using flutter build apk --split-per-abi)
 All the last updated binaries are stored in [binaries](/binaries) folder
 
-<!-- ## Build and install
-()
+## Notes
+- I learned Flutter from [Introduction to Flutter Development Using Dart course by The App Brewery created in collaboration with the Google Flutter team](https://www.appbrewery.co/p/intro-to-flutter)
+- Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building.
+- Flowcharts were made using [Darw.io](https://www.draw.io/)
