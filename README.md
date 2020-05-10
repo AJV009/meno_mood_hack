@@ -61,12 +61,11 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 ## Build and Install
 
-### My build Setup
-- HP EliteBook 8470p
+### My PC build Setup (HP EliteBook 8470p)
 - 8GB RAM, 500BG HDD
 - Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz, 2601 Mhz, 2 Core(s), 4 Logical Processor(s)
 
-### Flutter version details (from flutter doctor)
+### Flutter version details (from 'flutter doctor')
 - Flutter (Channel stable, v1.17.0, on Microsoft Windows [Version 10.0.18363.778], locale en-US)
 - Android toolchain - develop for Android devices (Android SDK version 29.0.2)
 - Android Studio (version 3.6), Flutter plugin version 45.1.1, Dart plugin version 192.7761

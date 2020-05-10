@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'content.dart';
+
 Content cont = new Content();
 void main() => runApp(MaterialApp( home: MenoMood(),  title: 'MenoHack', ), );
 class MenoMood extends StatefulWidget { @override _MenoMoodState createState() { cont.jsonify(); return _MenoMoodState(); } }
