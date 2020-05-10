@@ -26,6 +26,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Meditation can come really handy to control constant mood swings. The most simple breath in breath out meditation is a very effective method for stressed out people while it does take some time to get used to even such simple meditation techniques.
 - Voice assistant can help you get your work done without touching your phone. Using STT (speech to text) and TTS(text to speech) modules for reminding you of task, reading you out good blogs on menopause to make you feel good. As of now google keyboards comes with voice features so you fill any input text area with your voice.
 - Quickly connect with nearby doctors in case of emergencies and any problems.
+- Meet and reach out to people for more personal care.
 
 ## Why Flutter over other Android Frameworks?
 - Same UI and business logic in all platforms. Single code base works for iOS, Android, Web and Desktop.
