@@ -5,7 +5,9 @@ import 'content.dart';
 Content cont = new Content();
 void main() => runApp(MaterialApp( home: MenoMood(),  title: 'MenoHack', ), );
 class MenoMood extends StatefulWidget { @override _MenoMoodState createState() {
-  cont.jsonify(cont.blogNetPath,cont.blogFilePath); return _MenoMoodState(); } }
+  cont.blogify(cont.fileDownloader(cont.blogNetPath, cont.blogFilePath));
+
+  return _MenoMoodState(); } }
 class _MenoMoodState extends State<MenoMood> {
   int _page = 0; 
   @override
