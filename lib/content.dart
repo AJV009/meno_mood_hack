@@ -34,19 +34,6 @@ class Content {
     else if (index == 4) return voiceWid;
     else if (index == 5) return aboutWid;
   }
-  // paths and file
-  String blogFilePath = "/blog.json";
-  String blogNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/blog.json";
-  String musicFilePath = "/music.json";
-  String musicNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/music.json";
-  // json file downloader
-  fileDownloader(jsonNetPath, fileName) async {
-    String jsonfile = jsonNetPath;
-    Directory appDirectory = await getApplicationDocumentsDirectory();
-    String savePath = appDirectory.path+fileName;
-    await Dio().download(jsonfile,savePath);
-    return savePath;
-  }
   // in-app browser
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
   // head of every page
@@ -60,6 +47,11 @@ class Content {
       ),
     );
   }
+  makeList(){
+    insights();
+    blogify();
+    musicify();
+  }
   // ----------------------------
   // TODO: Insights (local linear regression, reports)
   insights() {
@@ -67,7 +59,10 @@ class Content {
   }
   // ----------------------------
   // blogsnipmaker downloader
-  blogify(savePath) async {
+  blogify() async {
+    String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/blog.json";
+    Directory appDirectory = await getApplicationDocumentsDirectory();
+    String savePath = appDirectory.path+"/blog.json";
     Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
       blogWid.add(blogsnip(key, value));
@@ -93,17 +88,17 @@ class Content {
   //Map periodTable =
   // ----------------------------
   // TODO: Listen (music)
-  musicify(savePath) async {
+  musicify() async {
+    String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/music.json";
+    Directory appDirectory = await getApplicationDocumentsDirectory();
+    String savePath = appDirectory.path+"/music.json";
     Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
-      audWid.add(musicsnip(value));
+      YoutubePlayerController controller = YoutubePlayerController(
+          initialVideoId: YoutubePlayer.convertUrlToId(value),
+          flags: YoutubePlayerFlags( autoPlay: false, loop: true) );
+      audWid.add(YoutubePlayer( controller: controller, showVideoProgressIndicator: false, ));
     });
-  }
-  musicsnip(vidID) async {
-    YoutubePlayerController controller = YoutubePlayerController(
-      initialVideoId: YoutubePlayer.convertUrlToId(vidID),
-        flags: YoutubePlayerFlags( autoPlay: false, loop: true) );
-    return YoutubePlayer( controller: controller, showVideoProgressIndicator: false, );
   }
   // ----------------------------
   // TODO: Speakup (speakup to doctors)
