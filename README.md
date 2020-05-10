@@ -3,7 +3,7 @@
 Control **Menopause mood swings**. Based on meditation and music techniques.
 This app and repo was created for the [Hacking Menopause by Hackster.io](https://www.hackster.io/contests/aarpmenopause) competition.
 
-Am a Indian kid just started to learn develop mobile applications. So am more like a software guy than hardware. Even though Menopause is a new thing to me and only for girls or women I have a little sister and mother to take care of! So It makes sense for me to contribute with the knowledge I have about App Development and little bit of Machine Learning (ML).
+Am a Indian kid just started to learn develop mobile applications. So am more like a software guy than hardware. Even though Menopause is a new thing to me and only for girls or women I have a little sister and mother to take care of! So It makes sense for me to contribute with the knowledge I have about App Development and little bit of Machine Learning (ML). Being a Software kid I couldnt think of any Hardware solutions and I guess there are many Hardware developers out there making some amazing solution for Menopause.
 
 After watching the "AARP Hacking Menopause Webinar" I felt that that I could solve some Menopause symptoms like anxiety and stress using mobile applications. This is my first ever mobile application so suggestions are welcomed.
 This project guide will take you through the whole app structure from scratch with understanding of a Flutter App development and Menopause. symptoms.
@@ -28,12 +28,23 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Voice assistant can help you get your work done without touching your phone. Using STT (speech to text) and TTS(text to speech) modules for reminding you of task, reading you out good blogs on menopause to make you feel good. As of now google keyboards comes with voice features so you fill any input text area with your voice.
 
 ## What my App does?
+
 ## App structure
+
 ## Features
+
 ## Code explanation
 **Packages used** (https://pub.dev/)
+- [curved_navigation_bar]()
+- [dio]()
+- [flutter_web_browser]()
+- [path_provider]()
+- [youtube_player_flutter]()
+
 ## What I learned
+
 ## Challenges Faced
+
 ## TODO
 - iOS binaries
 - Publish to Play Store and App Store
@@ -44,7 +55,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Replace video player with Music player which plays from YouTube
 - More Mozart Effect Music
 
-## Build and install
+## Build and Install
 
 ### My build Setup
 - HP EliteBook 8470p
