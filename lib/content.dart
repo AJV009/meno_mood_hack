@@ -34,9 +34,9 @@ class Content {
     else if (index == 5) return aboutWid;
   }
   String blogFilePath = "/blog.json";
-  String blogNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/AppNetData/blog.json";
+  String blogNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/blog.json";
   String musicFilePath = "/music.json";
-  String musicNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/AppNetData/music.json";
+  String musicNetPath = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/music.json";
   // json file downloader
   jsonify(String jsonNetPath, String fileName) async {
     String jsonfile = jsonNetPath;
