@@ -3,6 +3,7 @@ import 'dart:io' show File;
 import 'dart:convert' show json;
 import 'package:flutter/material.dart';
 import 'package:dio/dio.dart';
+import 'package:flutter_offline/flutter_offline.dart';
 import 'package:flutter_web_browser/flutter_web_browser.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
@@ -48,12 +49,13 @@ class Content {
     );
   }
   makeList(){
+    ConnectivityResult connectivity;
+    print(connectivity);
     insights();
     blogify();
     musicify();
   }
   // ----------------------------
-  // TODO: Insights (local linear regression, reports)
   insights() {
     insightsWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
   }
@@ -63,6 +65,7 @@ class Content {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/blog.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
     String savePath = appDirectory.path+"/blog.json";
+    await Dio().download(jsonfile,savePath);
     Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
       blogWid.add(blogsnip(key, value));
@@ -84,14 +87,15 @@ class Content {
     );
   }
   // ----------------------------
-  // TODO: Activity (record - periods, sleep, water intake)
-  //Map periodTable =
+  activify(){
+    activityWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+  }
   // ----------------------------
-  // TODO: Listen (music)
   musicify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/music.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
     String savePath = appDirectory.path+"/music.json";
+    await Dio().download(jsonfile,savePath);
     Map jsondata = json.decode(await new File(savePath).readAsString());
     jsondata.forEach((key, value) {
       YoutubePlayerController controller = YoutubePlayerController(
@@ -101,8 +105,12 @@ class Content {
     });
   }
   // ----------------------------
-  // TODO: Speakup (speakup to doctors)
+  speakfy(){
+    voiceWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+  }
   // ----------------------------
-  // TODO: About
+  theAbout(){
+    aboutWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+  }
   // ----------------------------
 }

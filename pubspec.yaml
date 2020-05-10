@@ -13,6 +13,7 @@ dependencies:
   flutter_web_browser: ^0.11.0
   path_provider: ^1.6.7
   youtube_player_flutter: ^6.1.1
+  flutter_offline: ^0.3.0
 
 dev_dependencies:
   flutter_test:
