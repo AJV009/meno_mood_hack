@@ -129,11 +129,26 @@ class Content {
   }
   // ----------------- TODO: voice assistant
   speakfy(){
-    voiceWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+    voiceWid.add(blogsnip("Click here to search doctors nearby", "https://www.google.com/maps/search/doctors+nearby"));
   }
   // ---------------- TODO: About
-  theAbout(){
-    aboutWid.add(blogsnip("Nothing to show, prototype Stage", "https://github.com/AJV009/meno_mood_hack"));
+  theAbout() async {
+    String introstring = "This is an Open Source project developed for the Hackster.io Hacking "
+        "menopause competition. We are aiming to combine blogs, AI assistant, VR/AR visuals, AI, "
+        "quick diagnosis, emergency contacts anf fourm to a single free app";
+    aboutWid.add(
+        Padding(
+          padding: const EdgeInsets.all(3.0),
+          child: SizedBox(
+            width: double.infinity,
+            child: MaterialButton( disabledColor: Colors.yellow.shade300,
+              child: Text(introstring, style: TextStyle(fontSize: 20.0, color: Colors.blue,), ),
+            ),
+          ),
+        ),
+    );
+    String contrib = "You cantribute to meno_mood_hack repo by ajv009 in GitHub";
+    aboutWid.add(blogsnip(contrib, "https://github.com/AJV009/meno_mood_hack"));
   }
   // ----------------------------
 }
