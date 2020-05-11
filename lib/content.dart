@@ -96,9 +96,14 @@ class Content {
   // --------------------- TODO: Activity
   activify() async {
     barbaDataCheck();
-//    activityWid.add(
-//
-//    );
+    activityWid.add(Padding(
+      padding: const EdgeInsets.all(3.0),
+      child: SizedBox(
+        width: double.infinity,
+        child: InputChip(label: Text("Water Intake"))
+      ),
+    ),
+    );
   }
   barbaDataCheck() async {
     await Barbarian.init();
