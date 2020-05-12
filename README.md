@@ -57,7 +57,7 @@ Some points to note for a person not in good health - Music, Meditation, control
     - [rflutter_alert](https://pub.dev/packages/rflutter_alert)
     - [barbarian](https://pub.dev/packages/barbarian)
     - [flutter_input](https://pub.dev/packages/flutter_input)
-- **Please give kudos to the above package publishers, its because of their packages today we are quicly able to create a flutter app.**
+- **Please give kudos to the above package publishers, its because of their packages today we can quicly create a flutter app from scratch.**
 - [main.dart](/lib/main.dart)
 ```dart
 import 'package:flutter/material.dart';
@@ -89,11 +89,13 @@ class _MenoMoodState extends State<MenoMood> {
 ```
 The main file is like a skelaton as the actual code resides in the content file.
 
-- [content.dart](/lib/content.dart)
+- [content.dart](/lib/content.dart) (just some important snips of the full code)
 ```dart
-  // in-app browser
   static openBrowserTab(String url) async { await FlutterWebBrowser.openWebPage(url: url, androidToolbarColor: Colors.pink.shade100); }
-  // damn call everything I know of!
+```
+openBrowserTab is snip for in-app browser from the flutter web browser package
+
+```dart
   makeList(){
     insights();
     blogify();
@@ -102,7 +104,10 @@ The main file is like a skelaton as the actual code resides in the content file.
     speakfy();
     theAbout();
   }
-  // blogsnipmaker downloader
+```
+This is how we call all the functions in this code
+
+```dart
   blogify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/blog.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
@@ -114,7 +119,10 @@ The main file is like a skelaton as the actual code resides in the content file.
       blogWid.add(blogsnip(key, value));
     });
   }
-  // create blogsnip widgets
+```
+Code to download the json file, read and add blogsnips to the app UI
+
+```dart
   static Widget blogsnip(String desc, String url) {
     return Padding(
       padding: const EdgeInsets.all(3.0),
@@ -129,7 +137,10 @@ The main file is like a skelaton as the actual code resides in the content file.
       ),
     );
   }
-  // barbarian data call
+```
+blogsnip - a widget for creating a clickable button with text
+
+```dart
   barbaDataCheck() async {
     await Barbarian.init();
     try {
@@ -142,7 +153,10 @@ The main file is like a skelaton as the actual code resides in the content file.
     Barbarian.write('period', period);
     Barbarian.write('sleep', sleep);
   }
-  // ----------------------------
+```
+Using barbarian to store and retrive data from disk (water, period, sleep are dynamic list objects)
+
+```dart
   musicify() async {
     String jsonfile = "https://raw.githubusercontent.com/AJV009/meno_mood_hack/master/netData/music.json";
     Directory appDirectory = await getApplicationDocumentsDirectory();
@@ -158,6 +172,7 @@ The main file is like a skelaton as the actual code resides in the content file.
     });
   }
 ```
+The music widget which again pulls another json file, reads and creates video box.
 
 ## What I learned
 - How Menopause affected women. The challenges they faced while trying to live out. There sufferings because of years long Menopause.
