@@ -49,7 +49,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 
 ## Quick Snaps
-![Project Video](/netData/View10.mp4)
+[![My project quick snap](https://img.youtube.com/vi/FAKwzmsOmGM/maxresdefault.jpg)](https://youtu.be/FAKwzmsOmGM)
 
 ## Code explanation
 - **Dependencies** (check out the [pubspec.yml](/pubspec.yaml) for dependency version)
