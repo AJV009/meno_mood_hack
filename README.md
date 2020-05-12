@@ -87,7 +87,7 @@ class _MenoMoodState extends State<MenoMood> {
   }
 }
 ```
-The main file is like a skelaton as the actual code resides in the content file.
+The main file is like a skelaton as the actual code resides in the content file. We have used some custom fonts downloaded externally in this app.
 
 - [content.dart](/lib/content.dart) (just some important snips of the full code)
 ```dart
