@@ -7,6 +7,8 @@ Am a Indian kid just started to learn develop mobile applications. So am more li
 After watching the "AARP Hacking Menopause Webinar" I felt that that I could solve some Menopause symptoms like anxiety and stress using mobile applications. This is my first ever mobile application so suggestions are welcomed.
 This project guide will take you through the whole app structure and Menopause symptoms.
 
+![Quick Pic!](/netData/work1.jpg)
+
 ## Menopause
 - Menopause is the time that marks the end of your menstrual cycles. It's diagnosed after you've gone 12 months without a menstrual period.
 - Menopause can happen in your 40s or 50s, but the average age is 51 in the United States.
