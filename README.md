@@ -49,7 +49,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 
 ## Quick Snaps
-![Project Video](/netData/)
+![Project Video](/netData/View10.mp4)
 
 ## Code explanation
 - **Dependencies** (check out the [pubspec.yml](/pubspec.yaml) for dependency version)
