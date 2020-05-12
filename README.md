@@ -49,7 +49,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 
 ## Quick Snaps
-[![My project quick snap](https://img.youtube.com/vi/FAKwzmsOmGM/maxresdefault.jpg)](https://youtu.be/FAKwzmsOmGM)
+[![My project quick snap](https://img.youtube.com/vi/FAKwzmsOmGM/maxresdefault.jpg)](https://youtu.be/FAKwzmsOmGM "Quick gothrough of the app as on 12-05-2020")
 
 ## Code explanation
 - **Dependencies** (check out the [pubspec.yml](/pubspec.yaml) for dependency version)
