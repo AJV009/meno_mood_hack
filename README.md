@@ -47,6 +47,10 @@ Some points to note for a person not in good health - Music, Meditation, control
 ## App structure
 ![Proposed plan/Structure](/netData/proStructure.png)
 
+
+## Quick Snaps
+![Project Video](/netData/)
+
 ## Code explanation
 - **Dependencies** (check out the [pubspec.yml](/pubspec.yaml) for dependency version)
     - [curved_navigation_bar](https://pub.dev/packages/curved_navigation_bar)
