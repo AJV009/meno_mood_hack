@@ -45,7 +45,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - An about page to start collaborating for development of this app.
 
 ## App structure
-
+- ![Proposed plan/Structure](/netData/proStructure.png)
 
 ## Code explanation
 **Packages used** (check out the [pubspec.yml](/pubspec.yaml) for dependencies used)
