@@ -46,6 +46,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 
 ## App structure
 
+
 ## Code explanation
 **Packages used** (check out the [pubspec.yml](/pubspec.yaml) for dependencies used)
 - [curved_navigation_bar]()
@@ -73,7 +74,7 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Decrease Splash Screen delays and add a image
 - Replace JSON with Firebase
 - Use simple on-device SVM for prediction of other symtoms and complexities. (ML)
-- Fourms support (discuss and share experencies)
+- Forums support (discuss and share experencies)
 - Voice analysis using Deep Learning (To detect emotion or feelings)
 
 ## Build and Install
