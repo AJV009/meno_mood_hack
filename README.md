@@ -48,17 +48,20 @@ Some points to note for a person not in good health - Music, Meditation, control
 ![Proposed plan/Structure](/netData/proStructure.png)
 
 ## Code explanation
-**Dependencies** (check out the [pubspec.yml](/pubspec.yaml) for dependency version)
-- [curved_navigation_bar](https://pub.dev/packages/curved_navigation_bar)
-- [dio](https://pub.dev/packages/dio)
-- [flutter_web_browser](https://pub.dev/packages/flutter_web_browser)
-- [path_provider](https://pub.dev/packages/path_provider)
-- [youtube_player_flutter](https://pub.dev/packages/youtube_player_flutter)
-- [rflutter_alert](https://pub.dev/packages/rflutter_alert)
-- [barbarian](https://pub.dev/packages/barbarian)
-- [flutter_input](https://pub.dev/packages/flutter_input)
-- **Please give kudos to the aboce package publishers, its because of their packages today we are quicly able to create a flutter app.**
-- <main.dart>
+- **Dependencies** (check out the [pubspec.yml](/pubspec.yaml) for dependency version)
+    - [curved_navigation_bar](https://pub.dev/packages/curved_navigation_bar)
+    - [dio](https://pub.dev/packages/dio)
+    - [flutter_web_browser](https://pub.dev/packages/flutter_web_browser)
+    - [path_provider](https://pub.dev/packages/path_provider)
+    - [youtube_player_flutter](https://pub.dev/packages/youtube_player_flutter)
+    - [rflutter_alert](https://pub.dev/packages/rflutter_alert)
+    - [barbarian](https://pub.dev/packages/barbarian)
+    - [flutter_input](https://pub.dev/packages/flutter_input)
+- **Please give kudos to the above package publishers, its because of their packages today we are quicly able to create a flutter app.**
+- (main.dart)[/lib/main.dart]
+```dart
+
+```
 
 ## What I learned
 - How Menopause affected women. The challenges they faced while trying to live out. There sufferings because of years long Menopause.
