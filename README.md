@@ -109,4 +109,4 @@ All the latest updated binaries are stored in [binaries](/binaries) folder with 
 - Am not any sort of advertiser of brain.fm. I have got no deal with brain.fm or any of there products. I have experienced it and has been effective throughout the project development cycle. There are more such music apps for concentration building you can try them out.
 - Flowcharts were made using [Darw.io](https://www.draw.io/), a desktop version is available too.
 - This project will remain Open Source forever! **(I LOVE OS)**
-- **I will work on TODO list if I receive some public interest or support. (Cause the list is actually easy except the time needed to code them)**
+- **Being my first Flutter project I'll keep on completing the TODO list as they are easy just bit of time consuming because am fairly new to mobile develoment. This project will be a nice addition **
