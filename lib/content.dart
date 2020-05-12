@@ -96,6 +96,12 @@ class Content {
   // --------------------- TODO: Activity
   activify() async {
     barbaDataCheck();
+    final myController = TextEditingController();
+    @override
+    void dispose() {
+      myController.dispose();
+      super.dispose();
+    }
     activityWid.add(Padding(
       padding: const EdgeInsets.all(3.0),
       child: SizedBox(

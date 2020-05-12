@@ -36,6 +36,13 @@ Some points to note for a person not in good health - Music, Meditation, control
 - As you can see I developed this app from scratch in just 4-5 days. This is perfect for MVP (Minimal Viable Product). Develop quickly and lauch quickly to both iOS and Android in the same time.
 
 ## Features and what my App does?
+**(I have also menstioned the features which I have have partially coded)**
+- Record **activities** like Periods, Water intake and Sleep comfortability. (menopause tracker)
+- Fetching some of the best **blogs** to guide women with menopause.
+- Create **Insights** (graphs and prediction) using the previous collected data.
+- Play **music** for optimum concentration while work.
+- Connect with **doctors** nearby in case of emergency.
+- An about page to start collaborating for development of this app.
 
 ## App structure
 
@@ -57,16 +64,17 @@ Some points to note for a person not in good health - Music, Meditation, control
 - Memory Leak during build because of wrong dependencies.
 - Being my first App I actually spend a lot of time trying to figure out various things in Flutter Development. (An experienced developer can recreate this App within 1 day.)
 
-## TODO
+## TODO:
 - iOS binaries (need a MacBook for iOS Development)
 - Publish to Play Store and App Store
 - Voice Assitant in App for touchless interface
 - Smoother UI, Auto blog update, OTA update
 - Replace video player with Music player which plays from YouTube and More Mozart Effect Music
-- Decrease Splash Screen delays
+- Decrease Splash Screen delays and add a image
 - Replace JSON with Firebase
 - Use simple on-device SVM for prediction of other symtoms and complexities. (ML)
 - Fourms support (discuss and share experencies)
+- Voice analysis using Deep Learning (To detect emotion or feelings)
 
 ## Build and Install
 
