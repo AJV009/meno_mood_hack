@@ -1,7 +1,7 @@
 # Meno Mood Hack App (Prototype Stage!)
 Control **Menopause mood swings**. Based on meditation and music techniques.
 This app and repo was created for the [Hacking Menopause by Hackster.io](https://www.hackster.io/contests/aarpmenopause) competition.
-
+My submission / blog for the competition [Hackster.io - Alphons Jaimon - Mood Hacker Hacking Mood Swings Using a Smartphone App](https://www.hackster.io/alphons-jaimon/mood-hacker-hacking-mood-swings-using-a-smartphone-app-e26ec7)
 ![Quick Pic!](/netData/work1.jpg)
 
 ## TODO:
